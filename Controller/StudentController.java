@@ -2,6 +2,7 @@ package com.Kasun.Enterprices.First.Project.Controller;
 
 
 import com.Kasun.Enterprices.First.Project.DTO.RequestDTO.RequestStudentDTO;
+import com.Kasun.Enterprices.First.Project.DTO.ResponseDTO.ResponseStudentDTO;
 import com.Kasun.Enterprices.First.Project.Service.StudentService;
 import com.Kasun.Enterprices.First.Project.util.StandardResponse;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,8 +29,9 @@ public class StudentController {
        return new ResponseEntity<>(new StandardResponse(
                 "Data Received",
         200,
-        dto.getNic()
-       ),
+studentService.getStudent(dto)
+
+               ),
                HttpStatus.OK);
 
 
