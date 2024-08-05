@@ -1,20 +1,11 @@
 package com.Kasun.Enterprices.First.Project.Service;
 
-import org.springframework.stereotype.Service;
+public interface TestService {
 
-@Service
-public class TestService {
+    public String getMessage();
+    
 
-    public String getMessage () {
-        return "welcome to spring boot  camp ";
-    }
-    public String getMessage1 () {
-        return "welcome to developper stack Academy";
-    }
+
 
 
 }
-
-
-
-

@@ -19,7 +19,9 @@ public class TestController {
 
     @GetMapping(path = "/message")
     private ResponseEntity<StandardResponse> message() {
+
         String data = t1.getMessage();
+
         return  new ResponseEntity<>(new StandardResponse(
                 "Successfully API worked",
                 200,
