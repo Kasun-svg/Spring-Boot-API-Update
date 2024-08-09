@@ -14,9 +14,14 @@ public class Student {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
   private long id;
-  private String name;
-  private String nic;
-  private  int age;
+   private String name;
+    private String nic;
+  private int age;
 
 
+    public Student(String fullName, int age, String nic) {
+    this.name=fullName;
+    this.nic=nic;
+    this.age=age;
+    }
 }
